@@ -10,8 +10,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> fdcf072a90639004a7c8e9a09a043fcffe008d51
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/users")
@@ -43,11 +46,14 @@ public class UserController {
              return ResponseEntity.notFound().build();
          }
     }
+<<<<<<< HEAD
     @GetMapping
     public ResponseEntity<List<UserDto>> getAllUsers(){
        List<UserDto> user= userService.getAllUsers();
         return new ResponseEntity<>(user,HttpStatus.OK);
     }
+=======
+>>>>>>> fdcf072a90639004a7c8e9a09a043fcffe008d51
 
 
 }

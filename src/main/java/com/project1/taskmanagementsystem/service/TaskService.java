@@ -2,7 +2,10 @@ package com.project1.taskmanagementsystem.service;
 
 import com.project1.taskmanagementsystem.dto.TaskDto;
 import com.project1.taskmanagementsystem.model.Task;
+<<<<<<< HEAD
 import com.project1.taskmanagementsystem.model.User;
+=======
+>>>>>>> fdcf072a90639004a7c8e9a09a043fcffe008d51
 import com.project1.taskmanagementsystem.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
