@@ -2,6 +2,8 @@ package com.project1.taskmanagementsystem.service;
 
 import com.project1.taskmanagementsystem.dto.TaskDto;
 import com.project1.taskmanagementsystem.model.Task;
+import com.project1.taskmanagementsystem.model.User;
+
 import com.project1.taskmanagementsystem.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

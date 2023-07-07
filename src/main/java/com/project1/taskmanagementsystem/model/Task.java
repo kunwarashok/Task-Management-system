@@ -1,6 +1,7 @@
 package com.project1.taskmanagementsystem.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 import java.time.LocalDate;

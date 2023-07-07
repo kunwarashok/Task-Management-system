@@ -8,7 +8,13 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
+import java.util.Optional;
+
 
 @Service
 @RequiredArgsConstructor
@@ -45,6 +51,15 @@ public class UserService {
     public UserDto getUserByUsername(String username) {
         Optional<User> userOptional=userRepository.findByUsername(username);
         return userOptional.map(this::convertToDto).orElse(null);
+
+    }
+
+
+    public List<UserDto> getAllUsers() {
+      List<User> users =userRepository.findAll();
+        return users.stream()
+                .map(this::convertToDto)
+                .collect(Collectors.toList());
 
     }
 }
