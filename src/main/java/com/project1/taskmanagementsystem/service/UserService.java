@@ -8,13 +8,13 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-<<<<<<< HEAD
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-=======
+
 import java.util.Optional;
->>>>>>> fdcf072a90639004a7c8e9a09a043fcffe008d51
+
 
 @Service
 @RequiredArgsConstructor
@@ -53,7 +53,7 @@ public class UserService {
         return userOptional.map(this::convertToDto).orElse(null);
 
     }
-<<<<<<< HEAD
+
 
     public List<UserDto> getAllUsers() {
       List<User> users =userRepository.findAll();
@@ -62,6 +62,4 @@ public class UserService {
                 .collect(Collectors.toList());
 
     }
-=======
->>>>>>> fdcf072a90639004a7c8e9a09a043fcffe008d51
 }

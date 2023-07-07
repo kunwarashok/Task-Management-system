@@ -1,5 +1,6 @@
 package com.project1.taskmanagementsystem.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class CommentDto {
     private Long id;
+    @NotBlank(message = "Content is required")
     private String content;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
